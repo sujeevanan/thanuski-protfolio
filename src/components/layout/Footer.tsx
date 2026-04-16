@@ -40,7 +40,7 @@ export default function Footer() {
               Navigate
             </h4>
             <div className="flex flex-col gap-3">
-              {["home", "about", "projects", "videos", "blogs", "contact"].map((id) => (
+              {["home", "about", "projects", "contact"].map((id) => (
                 <button
                   key={id}
                   onClick={() => scrollTo(id)}

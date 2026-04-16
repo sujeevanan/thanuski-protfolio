@@ -212,10 +212,36 @@ function GalleryModal({
             <span className="text-accent text-xs font-semibold tracking-widest uppercase">
               {project.category}
             </span>
-            <h2 className="font-playfair text-2xl font-bold text-dark mt-1 mb-2">
-              {project.title}
-            </h2>
-            <p className="text-dark-light text-sm leading-relaxed">{project.description}</p>
+
+            {project.imageDetails ? (
+              /* Per-image name + description — animates on slide change */
+              <AnimatePresence mode="wait">
+                <motion.div
+                  key={activeIndex}
+                  initial={{ opacity: 0, y: 8 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -8 }}
+                  transition={{ duration: 0.25, ease: "easeOut" }}
+                >
+                  <h2 className="font-playfair text-2xl font-bold text-dark mt-1 mb-1">
+                    {project.imageDetails[activeIndex].name}
+                  </h2>
+                  <p className="text-accent/70 text-xs font-medium mb-2 italic">
+                    {project.title}
+                  </p>
+                  <p className="text-dark-light text-sm leading-relaxed">
+                    {project.imageDetails[activeIndex].description}
+                  </p>
+                </motion.div>
+              </AnimatePresence>
+            ) : (
+              <>
+                <h2 className="font-playfair text-2xl font-bold text-dark mt-1 mb-2">
+                  {project.title}
+                </h2>
+                <p className="text-dark-light text-sm leading-relaxed">{project.description}</p>
+              </>
+            )}
           </div>
 
           {/* Thumbnails */}
@@ -233,7 +259,7 @@ function GalleryModal({
                 >
                   <Image
                     src={img}
-                    alt={`Thumbnail ${idx + 1}`}
+                    alt={project.imageDetails ? project.imageDetails[idx].name : `Thumbnail ${idx + 1}`}
                     fill
                     className="object-cover"
                     sizes="80px"

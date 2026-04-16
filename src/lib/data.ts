@@ -190,6 +190,11 @@ export const projectCategories: ProjectCategory[] = [
   "Furniture",
 ];
 
+export interface ImageDetail {
+  name: string;
+  description: string;
+}
+
 export interface Project {
   id: number;
   title: string;
@@ -198,16 +203,18 @@ export interface Project {
   thumbnail: string;
   images: string[];
   imageCount: number;
+  imageDetails?: ImageDetail[];
   featured?: boolean;
 }
 
 export const projects: Project[] = [
+  /* ── 3D Visualization ── */
   {
     id: 1,
-    title: "Residential Living Space",
+    title: "Lovi Ceylone — Airport Duty-Free Kiosk",
     category: "3D Visualization",
     description:
-      "A contemporary residential interior study exploring warm materiality, curated lighting, and cultural spatial narratives.",
+      "Inspired by the Sri Lankan Poruwa ceremony, this airport duty-free retail kiosk reinterprets cultural heritage through a minimalist contemporary design language. An elevated platform, wooden pillars referencing ceremonial forms, a circular moonstone-inspired wall feature, and a symbolic roof structure combine natural wood with modern materials — translating tradition into a refined airport retail experience.",
     thumbnail: "/project01/image01.jpeg",
     images: [
       "/project01/image01.jpeg",
@@ -218,16 +225,17 @@ export const projects: Project[] = [
       "/project01/image06.jpeg",
       "/project01/image07.jpeg",
       "/project01/image08.jpeg",
+      "/project01/image09.jpeg",
     ],
-    imageCount: 8,
+    imageCount: 9,
     featured: true,
   },
   {
     id: 2,
-    title: "Cultural Heritage Center",
+    title: "Crescent SereniTea Cabana",
     category: "3D Visualization",
     description:
-      "A conceptual design for a heritage space that bridges traditional architectural vocabulary with contemporary spatial experiences.",
+      "A contemporary leisure retreat nestled within a tea estate landscape, where architecture harmonises with nature. Centred around a semi-circular pool, the cabana integrates an outdoor BBQ and open-air cinema experience, an elevated deck overlooking the water, and a seamless spatial connection between built form and surrounding hills. Warm wooden finishes and neutral earth tones echo the calm beauty of the tea estate.",
     thumbnail: "/project02/image01.jpeg",
     images: [
       "/project02/image01.jpeg",
@@ -241,19 +249,32 @@ export const projects: Project[] = [
       "/project02/image09.jpeg",
       "/project02/image10.jpeg",
       "/project02/image11.jpeg",
+      "/project02/image12.jpeg",
+      "/project02/image13.jpeg",
+      "/project02/image14.jpeg",
+      "/project02/image15.jpeg",
+      "/project02/image16.jpeg",
+      "/project02/image17.jpeg",
+      "/project02/image18.jpeg",
+      "/project02/image19.jpeg",
+      "/project02/image20.jpeg",
+      "/project02/image21.jpeg",
+      "/project02/image22.jpeg",
+      "/project02/image23.jpeg",
+      "/project02/image24.jpeg",
     ],
-    imageCount: 11,
+    imageCount: 24,
     featured: true,
   },
   {
     id: 3,
-    title: "Technical Drawing Portfolio",
-    category: "2D Drawings",
+    title: "SORA VITA — Residential Interior",
+    category: "3D Visualization",
     description:
-      "A comprehensive set of technical drawings including floor plans, elevations, sections, and detailed construction drawings.",
-    thumbnail: "/project03/image01.jpeg",
+      "Inspired by the swallow bird and its feathers — symbolising freedom, movement, and renewal — SORA VITA is a minimalist residential interior that balances grounded stability with a sense of limitless liberation. Open, airy spatial compositions, smooth flowing forms, and organic influences are rendered in light wood, soft textures, and a muted palette of whites, soft blues, greys, and earth tones, creating a tranquil and poetic living environment.",
+    thumbnail: "/project03/image01.png",
     images: [
-      "/project03/image01.jpeg",
+      "/project03/image01.png",
       "/project03/image02.jpeg",
       "/project03/image03.jpeg",
       "/project03/image04.jpeg",
@@ -263,15 +284,22 @@ export const projects: Project[] = [
       "/project03/image08.jpeg",
       "/project03/image09.jpeg",
       "/project03/image10.jpeg",
+      "/project03/image11.jpeg",
+      "/project03/image12.jpeg",
+      "/project03/image13.jpeg",
+      "/project03/image14.jpeg",
+      "/project03/image15.jpeg",
+      "/project03/image16.jpeg",
     ],
-    imageCount: 10,
+    imageCount: 16,
+    featured: true,
   },
   {
     id: 4,
-    title: "Timber Furniture Collection",
-    category: "Furniture",
+    title: "AMORE — Food Truck Design",
+    category: "3D Visualization",
     description:
-      "A curated collection of custom furniture pieces designed with a focus on natural timber, clean forms, and artisan craftsmanship.",
+      "A thematic food truck designed for Viharamahadevi Park, Colombo, AMORE draws from the romantic narrative of Romeo and Juliet and the sun-drenched coastal identity of Positano, Italy. Pastel tones, Mongolian traditional patterns, and contemporary street art aesthetics layer into an immersive cultural dining experience — complete with a ground-floor kitchen, lounge seating, and an outdoor King Coconut station.",
     thumbnail: "/project04/image01.jpeg",
     images: [
       "/project04/image01.jpeg",
@@ -280,33 +308,110 @@ export const projects: Project[] = [
       "/project04/image04.jpeg",
       "/project04/image05.jpeg",
       "/project04/image06.jpeg",
+      "/project04/image07.jpeg",
+      "/project04/image08.jpeg",
+      "/project04/image09.jpeg",
+      "/project04/image10.jpeg",
+      "/project04/image11.jpeg",
     ],
-    imageCount: 6,
-    featured: true,
+    imageCount: 11,
   },
+  /* ── 2D Drawings ── */
   {
     id: 5,
-    title: "Atmospheric Interior Study",
-    category: "3D Visualization",
+    title: "The Floating Serenity — Bus Halt",
+    category: "2D Drawings",
     description:
-      "An atmospheric render study exploring mood, light, and shadow in intimate residential environments.",
-    thumbnail: "/project05/image01.jpeg",
-    images: ["/project05/image01.jpeg"],
-    imageCount: 1,
+      "A biomimicry-inspired bus halt along the Kotte Road corridor in Rajagiriya, facing Diyatha Uyana Linear Park and Diyawanna Lake. Guided by the organic form of the water hyacinth, this urban pause-point features a cross-laminated timber canopy, ventilated brick walls for passive cooling, leaf-patterned flooring, integrated creeping greenery, and a solar-powered lighting and charging system — transforming a commuter halt into a restorative urban sanctuary.",
+    thumbnail: "/project05/Screenshot%202026-04-17%20at%2001.26.37.png",
+    images: [
+      "/project05/Screenshot%202026-04-17%20at%2001.26.37.png",
+      "/project05/Screenshot%202026-04-17%20at%2001.27.04.png",
+      "/project05/Screenshot%202026-04-17%20at%2001.27.30.png",
+    ],
+    imageCount: 3,
   },
   {
     id: 6,
-    title: "Construction Documents",
+    title: "Bodimkarayo — Student Hostel",
     category: "2D Drawings",
     description:
-      "Professional construction documentation set including title blocks, detailed drawings, and technical specifications.",
-    thumbnail: "/project03/image03.jpeg",
+      "Rooted in the narrative of Bodimkarayo — one of Sri Lanka's first realistic stage dramas from the 1950s–60s — this student hostel design translates the intimate, collective, and culturally rich boarding house life into a contemporary residential typology. The design honours shared spaces, emotional connection, and communal living, reimagining the boarding house spirit for today's student community.",
+    thumbnail: "/project06/image01.png",
     images: [
-      "/project03/image03.jpeg",
-      "/project03/image07.jpeg",
-      "/project03/image09.jpeg",
+      "/project06/image01.png",
+      "/project06/image02.png",
+      "/project06/image03.png",
+      "/project06/image04.png",
+      "/project06/image05.png",
+      "/project06/image06.png",
     ],
-    imageCount: 3,
+    imageCount: 6,
+  },
+  /* ── Furniture ── */
+  {
+    id: 7,
+    title: "Mirror Collection",
+    category: "Furniture",
+    description:
+      "Stories woven in cane and carved in wood — five handcrafted mirrors echoing the legacy of Sri Lankan local materials and cultural heritage.",
+    thumbnail: "/mirror/image01.jpeg",
+    images: [
+      "/mirror/image01.jpeg",
+      "/mirror/image02.jpeg",
+      "/mirror/image03.jpeg",
+      "/mirror/image04.jpeg",
+      "/mirror/image05.jpeg",
+    ],
+    imageCount: 5,
+    imageDetails: [
+      {
+        name: "Manor Grace Mirror",
+        description:
+          "A handcrafted, foldable tabletop mirror inspired by Sri Lankan colonial Walawwa architecture. Features an arched central mirror framed in warm wood, flanked by hinged rattan panels that double as elegant jewellery organizers — perfect for dressing tables or boutique décor.",
+      },
+      {
+        name: "Arka Mirror",
+        description:
+          "A handcrafted vanity mirror with a round glass front framed in traditional Sri Lankan rattan cane weaving and dark wood. The reverse displays a cultural motif of a lotus flame and elephant, symbolising purity and strength. Turned wooden posts and a solid base blend tradition with modern utility.",
+      },
+      {
+        name: "Triple Grace Mirror",
+        description:
+          "A handcrafted tri-fold vanity mirror combining traditional Sri Lankan rattan cane weaving with rich wooden framing. The centre holds a full mirror while the side panels pair mirrors with cane sections designed to hang earrings — stylish, functional, and ideal for dressing tables or boutique spaces.",
+      },
+      {
+        name: "Grand Tamarid Mirror",
+        description:
+          "A classic vintage-inspired piece with a dark wooden frame accented by intricate cane weaving. Its gently arched top and sturdy base lend elegant antique charm — the blend of simple structure and detailed rattan work makes it a timeless addition to traditional or retro-inspired interiors.",
+      },
+      {
+        name: "Artisan's Reflection Mirror",
+        description:
+          "An elegant, handcrafted pentagonal mirror featuring a dark wood frame with intricate woven cane detailing, mounted on a sturdy round base. It combines vintage charm with natural warmth — a piece made for those who appreciate timeless artisanal craftsmanship.",
+      },
+    ],
+    featured: true,
+  },
+  {
+    id: 8,
+    title: "Leafline Console Table",
+    category: "Furniture",
+    description:
+      "An Art Nouveau–inspired furniture piece, the Leafline Console draws from the organic form of a half-open leaf and flowing vines. Crafted from solid mahogany with a wrought iron base, it blends natural movement with refined craftsmanship — transforming nature's elegance into a sculptural yet functional console that reflects harmony between art, nature, and design.",
+    thumbnail: "/table/WhatsApp%20Image%202026-04-17%20at%2001.48.38.jpeg",
+    images: ["/table/WhatsApp%20Image%202026-04-17%20at%2001.48.38.jpeg"],
+    imageCount: 1,
+  },
+  {
+    id: 9,
+    title: "Heritage Lamp",
+    category: "Furniture",
+    description:
+      "Inspired by Sri Lankan traditional art patterns combined with colonial design influences, this handcrafted lamp is crafted from wood and rattan cane. Carved details and woven surfaces allow soft light diffusion, casting warm patterned shadows — functioning as both a decorative sculptural piece and a celebration of local craftsmanship and cultural heritage.",
+    thumbnail: "/lamp/WhatsApp%20Image%202026-04-17%20at%2001.53.00.jpeg",
+    images: ["/lamp/WhatsApp%20Image%202026-04-17%20at%2001.53.00.jpeg"],
+    imageCount: 1,
   },
 ];
 

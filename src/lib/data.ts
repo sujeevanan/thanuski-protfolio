@@ -75,7 +75,7 @@ export const inspirations = [
     title: "Nature & Organic Patterns",
     description:
       "Drawing from the fractal complexity of natural forms, textures, and organic geometries.",
-    image: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1200&q=80",
+    image: "/inspires/nature.jpeg",
     tag: "Nature",
   },
   {
@@ -83,7 +83,7 @@ export const inspirations = [
     title: "Cultural Heritage",
     description:
       "Traditional architecture and craft traditions offer timeless wisdom for contemporary design.",
-    image: "https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1200&q=80",
+    image: "/inspires/cultural.jpeg",
     tag: "Culture",
   },
   {
@@ -91,7 +91,7 @@ export const inspirations = [
     title: "Historical Design Elements",
     description:
       "The architectural vocabulary of historical periods enriches modern spatial narratives.",
-    image: "https://images.unsplash.com/photo-1534430480872-3498386e7856?auto=format&fit=crop&w=1200&q=80",
+    image: "/inspires/historical.jpeg",
     tag: "History",
   },
   {
@@ -99,7 +99,7 @@ export const inspirations = [
     title: "Natural Textures & Light",
     description:
       "The interplay of material texture and natural light transforms ordinary space into experience.",
-    image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1200&q=80",
+    image: "/inspires/textures.jpeg",
     tag: "Texture",
   },
   {
@@ -107,7 +107,7 @@ export const inspirations = [
     title: "Traditional Crafts",
     description:
       "Handcrafted elements bring soul and human warmth to contemporary interior environments.",
-    image: "https://images.unsplash.com/photo-1601758124510-52d02ddb7cbd?auto=format&fit=crop&w=1200&q=80",
+    image: "/inspires/traditional.jpeg",
     tag: "Craft",
   },
 ];

@@ -145,7 +145,7 @@ function GalleryModal({
         animate="visible"
         exit="exit"
         onClick={(e) => e.stopPropagation()}
-        className="relative w-full max-w-5xl bg-white rounded-3xl overflow-hidden shadow-2xl max-h-[92vh] flex flex-col"
+        className="relative w-full max-w-5xl bg-white rounded-3xl overflow-hidden shadow-2xl h-[90vh] max-h-[90vh] flex flex-col"
       >
         {/* Close */}
         <button
@@ -156,7 +156,7 @@ function GalleryModal({
         </button>
 
         {/* Main Image */}
-        <div className="relative aspect-video bg-grey-light overflow-hidden flex-shrink-0">
+        <div className="relative flex-1 min-h-0 bg-grey-light overflow-hidden">
           <AnimatePresence initial={false} custom={direction} mode="wait">
             <motion.div
               key={activeIndex}
@@ -172,7 +172,7 @@ function GalleryModal({
                 src={project.images[activeIndex]}
                 alt={`${project.title} — image ${activeIndex + 1}`}
                 fill
-                className="object-cover"
+                className="object-contain"
                 sizes="90vw"
                 quality={90}
                 priority
@@ -207,8 +207,8 @@ function GalleryModal({
         </div>
 
         {/* Thumbnail strip + info */}
-        <div className="p-6 flex-1 overflow-y-auto">
-          <div className="mb-4">
+        <div className="p-5 flex-shrink-0">
+          <div className="mb-3">
             <span className="text-accent text-xs font-semibold tracking-widest uppercase">
               {project.category}
             </span>

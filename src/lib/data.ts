@@ -21,7 +21,7 @@ export const education = [
   {
     institution: "Limkokwing University",
     location: "Malaysia",
-    degree: "Bachelor of Arts Interior",
+    degree: "Bachelor of Arts Interior Design Architecture",
     icon: "🎓",
   },
   {

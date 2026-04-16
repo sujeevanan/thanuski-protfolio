@@ -2,8 +2,6 @@
 export const navLinks = [
   { href: "home", label: "Home" },
   { href: "about", label: "About" },
-  { href: "videos", label: "Videos" },
-  { href: "blogs", label: "Blogs" },
   { href: "projects", label: "Projects" },
   { href: "contact", label: "Contact" },
 ];
@@ -23,7 +21,7 @@ export const education = [
   {
     institution: "Limkokwing University",
     location: "Malaysia",
-    degree: "Bachelor of Interior Architecture",
+    degree: "Bachelor of Arts Interior",
     icon: "🎓",
   },
   {
@@ -77,7 +75,7 @@ export const inspirations = [
     title: "Nature & Organic Patterns",
     description:
       "Drawing from the fractal complexity of natural forms, textures, and organic geometries.",
-    image: "/project03/image01.jpeg",
+    image: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1200&q=80",
     tag: "Nature",
   },
   {
@@ -85,7 +83,7 @@ export const inspirations = [
     title: "Cultural Heritage",
     description:
       "Traditional architecture and craft traditions offer timeless wisdom for contemporary design.",
-    image: "/project02/image01.jpeg",
+    image: "https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1200&q=80",
     tag: "Culture",
   },
   {
@@ -93,7 +91,7 @@ export const inspirations = [
     title: "Historical Design Elements",
     description:
       "The architectural vocabulary of historical periods enriches modern spatial narratives.",
-    image: "/project04/image01.jpeg",
+    image: "https://images.unsplash.com/photo-1534430480872-3498386e7856?auto=format&fit=crop&w=1200&q=80",
     tag: "History",
   },
   {
@@ -101,7 +99,7 @@ export const inspirations = [
     title: "Natural Textures & Light",
     description:
       "The interplay of material texture and natural light transforms ordinary space into experience.",
-    image: "/project03/image05.jpeg",
+    image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1200&q=80",
     tag: "Texture",
   },
   {
@@ -109,7 +107,7 @@ export const inspirations = [
     title: "Traditional Crafts",
     description:
       "Handcrafted elements bring soul and human warmth to contemporary interior environments.",
-    image: "/project01/image02.jpeg",
+    image: "https://images.unsplash.com/photo-1601758124510-52d02ddb7cbd?auto=format&fit=crop&w=1200&q=80",
     tag: "Craft",
   },
 ];
@@ -122,6 +120,7 @@ export const designInterests = [
     description: "Evidence-driven spatial thinking rooted in deep contextual research.",
     icon: "🔬",
     gradient: "from-stone-50 to-amber-50",
+    image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=600&q=75",
   },
   {
     id: 2,
@@ -129,6 +128,7 @@ export const designInterests = [
     description: "Celebrating the beauty of aged materials, patina, and historic proportions.",
     icon: "🏺",
     gradient: "from-amber-50 to-orange-50",
+    image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=600&q=75",
   },
   {
     id: 3,
@@ -136,6 +136,7 @@ export const designInterests = [
     description: "Where clean modern lines meet the warmth of traditional craft and culture.",
     icon: "✦",
     gradient: "from-stone-50 to-slate-50",
+    image: "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=600&q=75",
   },
   {
     id: 4,
@@ -143,6 +144,7 @@ export const designInterests = [
     description: "Spaces that tell stories of identity, place, and collective memory.",
     icon: "🌿",
     gradient: "from-green-50 to-emerald-50",
+    image: "https://images.unsplash.com/photo-1600210492493-0946911123ea?auto=format&fit=crop&w=600&q=75",
   },
   {
     id: 5,
@@ -150,6 +152,7 @@ export const designInterests = [
     description: "Experimenting with natural and unexpected materials to create tactile experiences.",
     icon: "🪵",
     gradient: "from-amber-50 to-stone-50",
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=600&q=75",
   },
   {
     id: 6,
@@ -157,6 +160,7 @@ export const designInterests = [
     description: "Crafting environments where every element contributes to a cohesive narrative.",
     icon: "📖",
     gradient: "from-slate-50 to-stone-50",
+    image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=600&q=75",
   },
   {
     id: 7,
@@ -164,6 +168,7 @@ export const designInterests = [
     description: "Developing surface patterns inspired by cultural motifs and natural geometries.",
     icon: "◈",
     gradient: "from-rose-50 to-stone-50",
+    image: "https://images.unsplash.com/photo-1615529328331-f8917597711f?auto=format&fit=crop&w=600&q=75",
   },
   {
     id: 8,
@@ -171,6 +176,7 @@ export const designInterests = [
     description: "Designing responsibly with materials and systems that respect our planet.",
     icon: "♻",
     gradient: "from-emerald-50 to-teal-50",
+    image: "https://images.unsplash.com/photo-1501183638710-841dd1904471?auto=format&fit=crop&w=600&q=75",
   },
 ];
 
@@ -345,7 +351,7 @@ export const blogPosts = [
     category: "Design Philosophy",
     readTime: "5 min read",
     coverImage: "/project02/image06.jpeg",
-    date: "March 2024",
+    date: "March 2026",
   },
   {
     id: 2,
@@ -355,7 +361,7 @@ export const blogPosts = [
     category: "Materials",
     readTime: "4 min read",
     coverImage: "/project04/image04.jpeg",
-    date: "February 2024",
+    date: "February 2026",
   },
   {
     id: 3,
@@ -365,6 +371,6 @@ export const blogPosts = [
     category: "Lighting",
     readTime: "6 min read",
     coverImage: "/project01/image06.jpeg",
-    date: "January 2024",
+    date: "January 2026",
   },
 ];

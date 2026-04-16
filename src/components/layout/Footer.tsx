@@ -65,28 +65,12 @@ export default function Footer() {
             </h4>
             <div className="flex flex-col gap-3">
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/thanushki-senarath-b9a948316?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white/70 hover:text-accent-light transition-colors text-sm"
               >
                 LinkedIn
-              </a>
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white/70 hover:text-accent-light transition-colors text-sm"
-              >
-                Instagram
-              </a>
-              <a
-                href="https://behance.net"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white/70 hover:text-accent-light transition-colors text-sm"
-              >
-                Behance
               </a>
             </div>
           </motion.div>
@@ -95,7 +79,7 @@ export default function Footer() {
         {/* Bottom */}
         <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-white/40 text-sm">
-            © 2024 Thanushki Senarath. All rights reserved.
+            © 2026 Thanushki Senarath. All rights reserved.
           </p>
           <p className="text-white/30 text-xs">
             Interior Architecture Undergraduate · Limkokwing University Malaysia

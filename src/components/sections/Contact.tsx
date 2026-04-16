@@ -9,33 +9,13 @@ type FormStatus = "idle" | "loading" | "success" | "error";
 const socialLinks = [
   {
     name: "LinkedIn",
-    href: "https://linkedin.com",
+    href: "https://www.linkedin.com/in/thanushki-senarath-b9a948316?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
     icon: (
       <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
         <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
       </svg>
     ),
     label: "Connect on LinkedIn",
-  },
-  {
-    name: "Instagram",
-    href: "https://instagram.com",
-    icon: (
-      <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
-      </svg>
-    ),
-    label: "Follow on Instagram",
-  },
-  {
-    name: "Behance",
-    href: "https://behance.net",
-    icon: (
-      <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-        <path d="M22 7h-7V5h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 4.426.078.506.109 1.188.095 2.14H15.97c.13 3.211 3.483 3.312 4.588 2.029H23.7zM15.973 13.307c0 .405.025.808.056 1.13h5.504c-.044-1.252-.562-2.318-2.667-2.318-1.972 0-2.749.861-2.893 1.188zM8 1H0v17.999h8c3.359 0 5.647-1.47 5.647-5.068 0-2.114-1.215-3.427-2.788-3.977C12.3 9.45 13.1 8.35 13.1 6.673 13.1 3.28 10.5 1 8 1zm-.19 6.998H2.999V4.999H7.81c1.239 0 2.192.773 2.192 1.5 0 .728-.953 1.499-2.192 1.499zM8.38 11.997H3V9H8.38c1.415 0 2.623.743 2.623 1.499 0 .756-1.208 1.498-2.623 1.498z" />
-      </svg>
-    ),
-    label: "View on Behance",
   },
 ];
 
@@ -253,14 +233,14 @@ export default function Contact() {
                 <span className="text-2xl flex-shrink-0">✉</span>
                 <div>
                   <p className="text-sm font-medium text-dark mb-0.5">Email</p>
-                  <p className="text-dark-light text-sm">thanushki@example.com</p>
+                  <p className="text-dark-light text-sm">thanushkisenarath22@gmail.com</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
                 <span className="text-2xl flex-shrink-0">📍</span>
                 <div>
                   <p className="text-sm font-medium text-dark mb-0.5">Location</p>
-                  <p className="text-dark-light text-sm">Kuala Lumpur, Malaysia · Sri Lanka</p>
+                  <p className="text-dark-light text-sm">Sri Lanka</p>
                 </div>
               </div>
             </div>
